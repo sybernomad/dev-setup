@@ -1,0 +1,19 @@
+---
+- name: Add spotify signing key
+  apt_key:
+    # this key appears to change from time to time and may need to be updated in the future
+    # if this task breaks
+    url: https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg
+    state: present
+
+- name: Add spotify repository
+  apt_repository:
+    repo: deb http://repository.spotify.com stable non-free'
+    state: present
+
+- name: Install spotify
+  package:
+    name:
+      - spotify-client
+    state: present
+...

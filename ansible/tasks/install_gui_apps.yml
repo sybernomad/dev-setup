@@ -1,0 +1,13 @@
+---
+- name: Install common GUI apps
+  package:
+    name:
+      - meld
+      - bless
+      - wireshark
+      - keepass2
+      - firefox
+      - libreoffice
+      - tilix
+    state: present
+...

@@ -1,0 +1,14 @@
+---
+- name: Install base, common packages
+  package:
+    name:
+      - vim
+      - git
+      - bash-completion
+      - openssh-server
+      - wget
+      - ansible
+      - ansible-lint
+      - shellcheck
+    state: present
+...

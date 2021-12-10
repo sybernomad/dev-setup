@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - import_tasks: ../tasks/install_base_apps.yml
+    - import_tasks: ../tasks/install_gui_apps.yml
+    - import_tasks: ../tasks/install_docker.yml
+    - import_tasks: ../tasks/install_spotify.yml
+    - import_tasks: ../tasks/install_discord.yml
