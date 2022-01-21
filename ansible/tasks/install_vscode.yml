@@ -1,0 +1,18 @@
+---
+- name: Install key (apt)
+  apt_key:
+    url: 'https://packages.microsoft.com/keys/microsoft.asc'
+    state: present
+
+- name: Add VS Code repository
+  become: yes
+  apt_repository:
+    repo: 'deb https://packages.microsoft.com/repos/code stable main'
+    state: present
+
+- name: Install vsocde
+  package:
+    name:
+      - code
+    state: present
+...

@@ -7,3 +7,6 @@
     - import_tasks: ../tasks/install_docker.yml
     - import_tasks: ../tasks/install_spotify.yml
     - import_tasks: ../tasks/install_discord.yml
+    - import_tasks: ../tasks/install_nomach.yml
+    - import_tasks: ../tasks/install_vscode.yml
+    - import_tasks: ../tasks/install_chrome.yml

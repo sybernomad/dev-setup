@@ -10,5 +10,7 @@
       - ansible
       - ansible-lint
       - shellcheck
+      - htop
+      - clusterssh
     state: present
 ...

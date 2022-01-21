@@ -1,0 +1,5 @@
+---
+- name: Install nomachine
+  apt:
+    deb: https://download.nomachine.com/download/7.7/Linux/nomachine_7.7.4_1_amd64.deb
+...
