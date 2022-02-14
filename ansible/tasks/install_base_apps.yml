@@ -12,5 +12,6 @@
       - shellcheck
       - htop
       - clusterssh
+      - tree
     state: present
 ...
